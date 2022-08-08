@@ -33,6 +33,24 @@ public class User extends AbsIntegerIDEntity {
     @Column(name = "dateOfBirth")
     private Timestamp dateOfBirth;
 
+    private String location;
+
+    private String telephoneNumber;
+
+    private String telegramAccount;
+
+    private String email;
+
+    private String portfolioLink;
+
+    private String placeOfStudy;
+
+    private Integer yearsOfExperience;
+
+    private String skills;
+
+    private String typeOfWork;
+
 
 
 }
