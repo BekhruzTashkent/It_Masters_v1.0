@@ -1,23 +1,12 @@
-package com.example.itmasters.entity;
+package com.example.itmasters.payload;
 
-import com.example.itmasters.entity.template.AbsIntegerIDEntity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
+import com.example.itmasters.entity.DirectionForUser;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
-
-@Entity(name = "users")
-public class User extends AbsIntegerIDEntity {
+public class UserDTO {
 
     private String firstName;
 
@@ -29,8 +18,6 @@ public class User extends AbsIntegerIDEntity {
 
     private String prePassword;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy:MM:dd HH:mm")
-    @Column(name = "dateOfBirth")
     private Timestamp dateOfBirth;
 
     private String location;
@@ -51,6 +38,8 @@ public class User extends AbsIntegerIDEntity {
 
     private String typeOfWork;
 
+    private DirectionForUser directionForUser_id;
 
+//    private Attachment attachment_id;
 
 }
