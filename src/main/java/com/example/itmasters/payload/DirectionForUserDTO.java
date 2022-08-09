@@ -8,5 +8,6 @@ public class DirectionForUserDTO {
 
     private String fieldName;
 
-    private JobForUser jobForUser_id;
+    private Integer jobForUser_id;
+
 }

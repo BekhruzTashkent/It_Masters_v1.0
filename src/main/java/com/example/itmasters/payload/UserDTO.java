@@ -1,5 +1,6 @@
 package com.example.itmasters.payload;
 
+import com.example.itmasters.entity.Attachment;
 import com.example.itmasters.entity.DirectionForUser;
 import lombok.Data;
 
@@ -38,8 +39,10 @@ public class UserDTO {
 
     private String typeOfWork;
 
-    private DirectionForUser directionForUser_id;
+    private Integer directionForUser_id;
 
-//    private Attachment attachment_id;
+    private Integer attachment_id;
+
+    private Integer ranking_id;
 
 }
