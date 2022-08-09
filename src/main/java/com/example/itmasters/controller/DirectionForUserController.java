@@ -42,13 +42,13 @@ public class DirectionForUserController {
         return new ResponseEntity<>(addDirectionForUser.isSuccess() ? HttpStatus.OK : HttpStatus.CONFLICT);
     }
 
-    @PutMapping("update")
+    @PutMapping("/update/{id}")
     public HttpEntity<?> updateDirectionForUsers(@PathVariable Integer id, @RequestBody DirectionForUserDTO directionForUserDTO) {
         ApiResponse updateDirectionForUser = directionForUserService.updateDirectionForUser(id, directionForUserDTO);
         return new ResponseEntity<>(updateDirectionForUser.isSuccess() ? HttpStatus.OK : HttpStatus.CONFLICT);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public HttpEntity<?> deleteDirectionById(@PathVariable Integer id) {
         ApiResponse deleteDirectionForUser = directionForUserService.deleteDirectionForUser(id);
         return new ResponseEntity<>(deleteDirectionForUser.isSuccess() ? HttpStatus.OK : HttpStatus.CONFLICT);
