@@ -19,10 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 public class DirectionForUserController {
 
-    private final JobForUserService jobForUserService;
-
     private final DirectionForUserService directionForUserService;
-
 
     @GetMapping
     public HttpEntity<?> getAllDirectionForUsers() {
