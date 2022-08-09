@@ -1,5 +1,6 @@
 package com.example.itmasters.entity;
 
+import com.example.itmasters.entity.template.AbsIntegerIDEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,25 +10,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
-//FOR UPLOAD IN DB WE NEED TWO TABLES
-//it is first table
-public class Attachment { //this table used to show main info about file
+@NoArgsConstructor
+@Data
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+@Entity
+public class Attachment extends AbsIntegerIDEntity {
 
-    private String fileOriginalName; //pdp.jpg
+    private String fileOriginalName;
 
-    private long size;  //size of file ex: 2 mb = 2048000 byte(always in bytes)
+    private long size;
 
-    private String contentType;  //for ex: gpa, png , jpeg, mp3. GO to chrome: Common MIME Types
+    private String contentType;
 
 }
-
-
-

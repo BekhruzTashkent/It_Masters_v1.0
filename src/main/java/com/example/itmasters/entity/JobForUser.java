@@ -1,6 +1,7 @@
 package com.example.itmasters.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 
 import com.example.itmasters.entity.template.AbsIntegerIDEntity;
 import lombok.AllArgsConstructor;

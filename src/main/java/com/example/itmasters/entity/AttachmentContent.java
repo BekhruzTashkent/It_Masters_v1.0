@@ -6,20 +6,20 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Data
 
-public class AttachmentContent {//inside this table we have main content inside of file
+@Entity
+public class AttachmentContent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private byte[] asosiyContent;  //
+    private byte[] mainContent;
 
-    @OneToOne // EX: IT WORKS AS (select * rom attachment_content where attachment_id = 100)
-    private Attachment attachment;  //for instance byte from video is only in one defined file
+    @OneToOne
+    private Attachment attachment;
 
 }

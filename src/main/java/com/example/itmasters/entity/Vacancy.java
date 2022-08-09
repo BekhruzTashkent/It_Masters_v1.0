@@ -11,32 +11,33 @@ import javax.persistence.ManyToOne;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+
 @Entity
 public class Vacancy extends AbsIntegerIDEntity {
 
-   private String companyName;
+    private String companyName;
 
-   private Integer password;
+    private Integer password;
 
-   private Integer prePassowrd;
+    private Integer prePassword;
 
-   private String email;
+    private String email;
 
-   private String requirements;
+    private String requirements;
 
-   private String offers;
+    private String offers;
 
-   private String rules;
+    private String rules;
 
-   private String contact;
+    private String contact;
 
-   private Integer salary;
+    private Integer salary;
 
-   private String telegramUsername;
+    private String telegramUsername;
 
-   private String typeForSpecialist;
+    private String typeForSpecialist;
 
-   @ManyToOne
-   private DirectionForVacancy directionForVacancy;
+    @ManyToOne
+    private DirectionForVacancy directionForVacancy;
 
 }

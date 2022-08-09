@@ -4,6 +4,8 @@ import com.example.itmasters.entity.template.AbsIntegerIDEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -51,6 +53,13 @@ public class User extends AbsIntegerIDEntity {
 
     private String typeOfWork;
 
+    @OneToOne
+    private DirectionForUser directionForUser;
 
+    @OneToOne
+    private RankingForUser rankingForUser;
+
+    @OneToMany
+    private Attachment attachment;
 
 }

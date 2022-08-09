@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Data
 @Entity
-public class rankingForUser extends AbsIntegerIDEntity {
+public class RankingForUser extends AbsIntegerIDEntity {
 
    private Integer byRank;  //we change word byRank for future needs
 
