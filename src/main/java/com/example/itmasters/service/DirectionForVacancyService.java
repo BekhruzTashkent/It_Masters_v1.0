@@ -26,6 +26,7 @@ public class DirectionForVacancyService {
 
    private final JobForVacancyRepository jobForVacancyRepository;
 
+   //in order to get all
    public List<DirectionForVacancy> getAll(){
        List<DirectionForVacancy> all = directionForVacancyRepository.findAll();
        return all;
