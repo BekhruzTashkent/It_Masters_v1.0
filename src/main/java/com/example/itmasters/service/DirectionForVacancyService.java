@@ -51,7 +51,7 @@ public class DirectionForVacancyService {
 
        return new ApiResponse("added", true);
    }
-
+    //this is for update direction
    public ApiResponse updateDirectionForVacancy(Integer id, DirectionForVacancyDTO directionForVacancyDTO){
        Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(id);
        if(byId.isEmpty()){
