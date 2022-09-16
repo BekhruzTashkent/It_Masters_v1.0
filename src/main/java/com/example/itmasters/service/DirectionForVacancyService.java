@@ -37,6 +37,7 @@ public class DirectionForVacancyService {
        return byId;
    }
 
+   //it is for add directory for vacancy
    public ApiResponse addDirectionForVacancy(DirectionForVacancyDTO directionForVacancyDTO){
 
        Optional<JobForVacancy> byId = jobForVacancyRepository.findById(directionForVacancyDTO.getJobForVacancy_id());
