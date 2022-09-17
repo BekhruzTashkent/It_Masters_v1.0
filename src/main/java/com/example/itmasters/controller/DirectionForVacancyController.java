@@ -8,6 +8,7 @@ import com.example.itmasters.payload.DirectionForVacancyDTO;
 import com.example.itmasters.service.DirectionForUserService;
 import com.example.itmasters.service.DirectionForVacancyService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/directionForVacancy/")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DirectionForVacancyController {
 
     private final DirectionForVacancyService directionForVacancyService;
