@@ -26,6 +26,7 @@ public class DirectionForVacancyService {
 
    private final JobForVacancyRepository jobForVacancyRepository;
 
+   //in order to get all this get
    public List<DirectionForVacancy> getAll(){
        List<DirectionForVacancy> all = directionForVacancyRepository.findAll();
        return all;
@@ -36,6 +37,7 @@ public class DirectionForVacancyService {
        return byId;
    }
 
+   //it is for add directory for vacancy
    public ApiResponse addDirectionForVacancy(DirectionForVacancyDTO directionForVacancyDTO){
 
        Optional<JobForVacancy> byId = jobForVacancyRepository.findById(directionForVacancyDTO.getJobForVacancy_id());
@@ -50,7 +52,7 @@ public class DirectionForVacancyService {
 
        return new ApiResponse("added", true);
    }
-
+    //this is for update direction
    public ApiResponse updateDirectionForVacancy(Integer id, DirectionForVacancyDTO directionForVacancyDTO){
        Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(id);
        if(byId.isEmpty()){
