@@ -6,6 +6,7 @@ import com.example.itmasters.payload.JobForUserDTO;
 import com.example.itmasters.payload.UserDTO;
 import com.example.itmasters.service.JobForUserService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.HttpStatus;
@@ -16,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/jobForUser/")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class JobForUserController {
 
     private final JobForUserService jobForUserService;
