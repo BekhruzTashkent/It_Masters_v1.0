@@ -52,4 +52,5 @@ public class JobForVacancyController {
         ApiResponse apiResponse = jobForVacancyService.deleteById(id);
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }
+
 }
