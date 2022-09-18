@@ -6,13 +6,14 @@ import com.example.itmasters.payload.UserDTO;
 import com.example.itmasters.payload.VacancyDTO;
 import com.example.itmasters.repository.*;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class VacancyService {
 
     private final DirectionForVacancyRepository directionForVacancyRepository;
