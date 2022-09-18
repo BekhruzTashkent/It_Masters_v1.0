@@ -1,13 +1,9 @@
 package com.example.itmasters.service;
 
-import com.example.itmasters.entity.JobForUser;
 import com.example.itmasters.entity.JobForVacancy;
 import com.example.itmasters.payload.ApiResponse;
-import com.example.itmasters.payload.JobForUserDTO;
 import com.example.itmasters.payload.JobForVacancyDTO;
-import com.example.itmasters.repository.JobForUserRepository;
 import com.example.itmasters.repository.JobForVacancyRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
