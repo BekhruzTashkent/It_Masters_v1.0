@@ -22,20 +22,20 @@ public class VacancyService {
 
     private final VacancyRepository vacancyRepository;
 
-    public List<Vacancy> getAll(){
+    public List<Vacancy> getAll() {
         List<Vacancy> all = vacancyRepository.findAll();
         return all;
     }
 
-    public Optional<Vacancy> getById(Integer id){
+    public Optional<Vacancy> getById(Integer id) {
         Optional<Vacancy> byId = vacancyRepository.findById(id);
-        return  byId;
+        return byId;
     }
 
-    public ApiResponse addVacancy(VacancyDTO vacancyDTO){
+    public ApiResponse addVacancy(VacancyDTO vacancyDTO) {
 
         Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(vacancyDTO.getDirectionForVacancy_id());
-        if(byId.isEmpty()){
+        if (byId.isEmpty()) {
             return new ApiResponse("no such direction", false);
         }
 
@@ -56,14 +56,14 @@ public class VacancyService {
         return new ApiResponse("added", true);
     }
 
-    public ApiResponse updateVacancy(Integer id, VacancyDTO vacancyDTO){
+    public ApiResponse updateVacancy(Integer id, VacancyDTO vacancyDTO) {
         Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(vacancyDTO.getDirectionForVacancy_id());
-        if(byId.isEmpty()){
+        if (byId.isEmpty()) {
             return new ApiResponse("no such direction", false);
         }
 
         Optional<Vacancy> vacancyRepositoryById = vacancyRepository.findById(id);
-        if(vacancyRepositoryById.isEmpty()){
+        if (vacancyRepositoryById.isEmpty()) {
             return new ApiResponse("no such vacancy with this id", false);
         }
 
@@ -85,9 +85,9 @@ public class VacancyService {
 
     }
 
-    public  ApiResponse deleteById(Integer id){
+    public ApiResponse deleteById(Integer id) {
         Optional<Vacancy> byId = vacancyRepository.findById(id);
-        if(byId.isEmpty()){
+        if (byId.isEmpty()) {
             return new ApiResponse("no such vacancy", false);
         }
 
