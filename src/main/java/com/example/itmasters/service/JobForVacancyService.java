@@ -8,13 +8,14 @@ import com.example.itmasters.payload.JobForVacancyDTO;
 import com.example.itmasters.repository.JobForUserRepository;
 import com.example.itmasters.repository.JobForVacancyRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class JobForVacancyService {
 
     private final JobForVacancyRepository jobForVacancyRepository;
