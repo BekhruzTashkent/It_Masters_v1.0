@@ -8,6 +8,7 @@ import com.example.itmasters.payload.JobForVacancyDTO;
 import com.example.itmasters.service.JobForUserService;
 import com.example.itmasters.service.JobForVacancyService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/jobForVacancy/")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class JobForVacancyController {
 
     private final JobForVacancyService jobForVacancyService;
