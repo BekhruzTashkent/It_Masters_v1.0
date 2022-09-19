@@ -6,6 +6,7 @@ import com.example.itmasters.payload.UserDTO;
 import com.example.itmasters.service.JobForUserService;
 import com.example.itmasters.service.UserService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/user/")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
