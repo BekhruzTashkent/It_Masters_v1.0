@@ -38,7 +38,7 @@ public class JobForVacancyService {
 
     public ApiResponse updateJobForVacancy(Integer id, JobForVacancyDTO jobForVacancyDTO){
         Optional<JobForVacancy> byId = jobForVacancyRepository.findById(id);
-        if(byId.isEmpty()){
+        if(byId.isPresent()){
             return new ApiResponse("no such job type", false);
         }
 
