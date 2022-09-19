@@ -6,6 +6,7 @@ import com.example.itmasters.payload.DirectionForUserDTO;
 import com.example.itmasters.service.DirectionForUserService;
 import com.example.itmasters.service.JobForUserService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -16,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/directionForUser/")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DirectionForUserController {
 
     private final DirectionForUserService directionForUserService;
