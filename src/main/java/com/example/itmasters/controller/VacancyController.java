@@ -54,4 +54,5 @@ public class VacancyController {
         return new ResponseEntity<>(apiResponse.isSuccess() ? HttpStatus.OK : HttpStatus.CONFLICT);
     }
 
+
 }
