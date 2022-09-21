@@ -43,7 +43,7 @@ public class VacancyController {
     }
 
     @PutMapping("/update/{id}")
-    public HttpEntity<?> updateUser(@PathVariable Integer id, @RequestBody VacancyDTO vacancyDTO ) {
+    public HttpEntity<?> updateUser(@PathVariable Integer id, @RequestBody VacancyDTO vacancyDTO) {
         ApiResponse apiResponse = vacancyService.updateVacancy(id, vacancyDTO);
         return new ResponseEntity<>(apiResponse.isSuccess() ? HttpStatus.OK : HttpStatus.CONFLICT);
     }
