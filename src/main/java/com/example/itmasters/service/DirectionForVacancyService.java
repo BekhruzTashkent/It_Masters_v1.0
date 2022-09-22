@@ -69,7 +69,7 @@ public class DirectionForVacancyService {
        directionForVacancy.setDirectionName(directionForVacancy.getDirectionName());
        directionForVacancy.setJobForVacancy(byIdJob.get());
        directionForVacancyRepository.save(directionForVacancy);
-       return new ApiResponse("updated", true);
+       return new ApiResponse("direction for new vacancy updated", true);
    }
 
    public ApiResponse deleteById(Integer id){
