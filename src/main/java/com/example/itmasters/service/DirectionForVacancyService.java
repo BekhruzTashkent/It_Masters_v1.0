@@ -50,7 +50,7 @@ public class DirectionForVacancyService {
        directionForVacancy.setJobForVacancy(byId.get());
        directionForVacancyRepository.save(directionForVacancy);
 
-       return new ApiResponse("added", true);
+       return new ApiResponse("direction for vacancy added", true);
    }
     //this is for update direction
    public ApiResponse updateDirectionForVacancy(Integer id, DirectionForVacancyDTO directionForVacancyDTO){
