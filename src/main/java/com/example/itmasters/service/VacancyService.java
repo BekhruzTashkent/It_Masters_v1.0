@@ -95,5 +95,4 @@ public class VacancyService {
         return new ApiResponse("deleted", true);
     }
 
-
 }
