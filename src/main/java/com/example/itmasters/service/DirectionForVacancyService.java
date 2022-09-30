@@ -31,7 +31,7 @@ public class DirectionForVacancyService {
        List<DirectionForVacancy> all = directionForVacancyRepository.findAll();
        return all;
    }
-
+   //you can add by security
    public Optional<DirectionForVacancy> getById(Integer id){
        Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(id);
        return byId;
