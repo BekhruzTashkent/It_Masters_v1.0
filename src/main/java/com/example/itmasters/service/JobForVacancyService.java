@@ -33,13 +33,13 @@ public class JobForVacancyService {
         JobForVacancy jobForVacancy = new JobForVacancy();
         jobForVacancy.setSphereType(jobForVacancyDTO.getSphereType());
         jobForVacancyRepository.save(jobForVacancy);
-        return new ApiResponse("added", true);
+        return new ApiResponse("New job vacancy successfully added", true);
     }
 
     public ApiResponse updateJobForVacancy(Integer id, JobForVacancyDTO jobForVacancyDTO){
         Optional<JobForVacancy> byId = jobForVacancyRepository.findById(id);
         if(byId.isPresent()){
-            return new ApiResponse("no such job type", false);
+            return new ApiResponse("Nope such kind of job type", false);
         }
 
         JobForVacancy jobForVacancy = byId.get();
