@@ -51,7 +51,7 @@ public class JobForVacancyService {
 
     public ApiResponse deleteById(Integer id){
         jobForVacancyRepository.deleteById(id);
-        return new ApiResponse("deleted", true);
+        return new ApiResponse("Job For Vacancy deleted", true);
     }
 
 }
