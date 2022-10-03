@@ -45,7 +45,7 @@ public class JobForVacancyService {
         JobForVacancy jobForVacancy = byId.get();
         jobForVacancy.setSphereType(jobForVacancyDTO.getSphereType());
         jobForVacancyRepository.save(jobForVacancy);
-        return new ApiResponse("updated", true);
+        return new ApiResponse("Job For Vacancy updated", true);
 
     }
 
