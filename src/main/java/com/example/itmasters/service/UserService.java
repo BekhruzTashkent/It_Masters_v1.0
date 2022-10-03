@@ -11,13 +11,14 @@ import com.example.itmasters.repository.DirectionForUserRepository;
 import com.example.itmasters.repository.RankingForUserRepository;
 import com.example.itmasters.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository userRepository;
@@ -64,7 +65,7 @@ public class UserService {
         optionalAttachment.ifPresent(user::setAttachment);
         optionalRankingForUser.ifPresent(user::setRankingForUser);
         userRepository.save(user);
-        return new ApiResponse("User added successfully", true);
+        return new ApiResponse("New user added successfully", true);
     }
 
     public ApiResponse updateUser(Integer id, UserDTO userDTO){
