@@ -111,7 +111,7 @@ public class UserService {
             userRepository.deleteById(id);
             return new ApiResponse("User deleted successfully", true);
         } else {
-            return new ApiResponse("There is no user with this id", false);
+            return new ApiResponse("There is nope user with this id", false);
         }
     }
 

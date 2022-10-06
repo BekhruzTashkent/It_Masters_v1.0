@@ -8,13 +8,14 @@ import com.example.itmasters.repository.DirectionForUserRepository;
 import com.example.itmasters.repository.JobForUserRepository;
 
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DirectionForUserService {
 
     private final DirectionForUserRepository directionForUserRepository;
