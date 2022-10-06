@@ -88,7 +88,7 @@ public class VacancyService {
     public ApiResponse deleteById(Integer id) {
         Optional<Vacancy> byId = vacancyRepository.findById(id);
         if (byId.isEmpty()) {
-            return new ApiResponse("no such vacancy", false);
+            return new ApiResponse("There are no such vacancy", false);
         }
 
         vacancyRepository.deleteById(id);
