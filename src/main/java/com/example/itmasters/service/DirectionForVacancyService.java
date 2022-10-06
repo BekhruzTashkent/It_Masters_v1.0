@@ -12,6 +12,7 @@ import com.example.itmasters.repository.DirectionForVacancyRepository;
 import com.example.itmasters.repository.JobForUserRepository;
 import com.example.itmasters.repository.JobForVacancyRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
@@ -19,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DirectionForVacancyService {
 
    private final DirectionForVacancyRepository directionForVacancyRepository;
