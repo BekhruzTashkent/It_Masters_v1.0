@@ -4,7 +4,7 @@ import com.example.itmasters.entity.DirectionForVacancy;
 import com.example.itmasters.payload.ApiResponse;
 import com.example.itmasters.payload.DirectionForVacancyDTO;
 import com.example.itmasters.service.DirectionForVacancyService;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
