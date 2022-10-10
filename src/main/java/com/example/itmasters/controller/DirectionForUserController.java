@@ -4,8 +4,7 @@ import com.example.itmasters.entity.DirectionForUser;
 import com.example.itmasters.payload.ApiResponse;
 import com.example.itmasters.payload.DirectionForUserDTO;
 import com.example.itmasters.service.DirectionForUserService;
-import com.example.itmasters.service.JobForUserService;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
