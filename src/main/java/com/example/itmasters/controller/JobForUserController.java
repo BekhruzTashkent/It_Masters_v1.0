@@ -3,12 +3,12 @@ package com.example.itmasters.controller;
 import com.example.itmasters.entity.JobForUser;
 import com.example.itmasters.payload.ApiResponse;
 import com.example.itmasters.payload.JobForUserDTO;
-import com.example.itmasters.payload.UserDTO;
+
 import com.example.itmasters.service.JobForUserService;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpOutputMessage;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
