@@ -5,7 +5,7 @@ import com.example.itmasters.payload.ApiResponse;
 
 import com.example.itmasters.payload.VacancyDTO;
 import com.example.itmasters.repository.*;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
