@@ -10,7 +10,7 @@ import com.example.itmasters.repository.AttachmentRepository;
 import com.example.itmasters.repository.DirectionForUserRepository;
 import com.example.itmasters.repository.RankingForUserRepository;
 import com.example.itmasters.repository.UserRepository;
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
