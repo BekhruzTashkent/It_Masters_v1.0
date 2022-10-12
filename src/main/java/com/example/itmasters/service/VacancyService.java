@@ -2,7 +2,7 @@ package com.example.itmasters.service;
 
 import com.example.itmasters.entity.*;
 import com.example.itmasters.payload.ApiResponse;
-import com.example.itmasters.payload.UserDTO;
+
 import com.example.itmasters.payload.VacancyDTO;
 import com.example.itmasters.repository.*;
 import lombok.AllArgsConstructor;
@@ -17,8 +17,6 @@ import java.util.Optional;
 public class VacancyService {
 
     private final DirectionForVacancyRepository directionForVacancyRepository;
-
-    private final JobForVacancyRepository jobForVacancyRepository;
 
     private final VacancyRepository vacancyRepository;
 
