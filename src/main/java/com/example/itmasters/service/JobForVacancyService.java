@@ -39,7 +39,7 @@ public class JobForVacancyService {
     public ApiResponse updateJobForVacancy(Integer id, JobForVacancyDTO jobForVacancyDTO){
         Optional<JobForVacancy> byId = jobForVacancyRepository.findById(id);
         if(byId.isPresent()){
-            return new ApiResponse("Nope such kind of job type", false);
+            return new ApiResponse("Unfortunately, nope such kind of job type", false);
         }
 
         JobForVacancy jobForVacancy = byId.get();
