@@ -45,13 +45,13 @@ public class JobForVacancyService {
         JobForVacancy jobForVacancy = byId.get();
         jobForVacancy.setSphereType(jobForVacancyDTO.getSphereType());
         jobForVacancyRepository.save(jobForVacancy);
-        return new ApiResponse("Job For Vacancy updated", true);
+        return new ApiResponse("Job For Vacancy updated successfully", true);
 
     }
 
     public ApiResponse deleteById(Integer id){
         jobForVacancyRepository.deleteById(id);
-        return new ApiResponse("Job For Vacancy deleted", true);
+        return new ApiResponse("Job For Vacancy deleted successfully", true);
     }
 
 }
