@@ -34,7 +34,7 @@ public class VacancyService {
 
         Optional<DirectionForVacancy> byId = directionForVacancyRepository.findById(vacancyDTO.getDirectionForVacancy_id());
         if (byId.isEmpty()) {
-            return new ApiResponse("no such direction", false);
+            return new ApiResponse("Unfortunately, no such direction", false);
         }
 
         Vacancy vacancy = new Vacancy();
