@@ -7,7 +7,6 @@ import com.example.itmasters.payload.DirectionForUserDTO;
 import com.example.itmasters.repository.DirectionForUserRepository;
 import com.example.itmasters.repository.JobForUserRepository;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
