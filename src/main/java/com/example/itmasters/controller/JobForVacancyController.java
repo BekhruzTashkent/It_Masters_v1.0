@@ -1,9 +1,7 @@
 package com.example.itmasters.controller;
 
-import com.example.itmasters.entity.JobForUser;
 import com.example.itmasters.entity.JobForVacancy;
 import com.example.itmasters.payload.ApiResponse;
-import com.example.itmasters.payload.JobForUserDTO;
 import com.example.itmasters.payload.JobForVacancyDTO;
 import com.example.itmasters.service.JobForUserService;
 import com.example.itmasters.service.JobForVacancyService;
