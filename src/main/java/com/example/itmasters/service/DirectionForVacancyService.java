@@ -45,7 +45,7 @@ public class DirectionForVacancyService {
        directionForVacancy.setDirectionName(directionForVacancyDTO.getDirectionName());
        directionForVacancy.setJobForVacancy(byId.get());
        directionForVacancyRepository.save(directionForVacancy);
-
+       System.out.println("added");
        return new ApiResponse("direction for vacancy added", true);
    }
     //this is for update direction
