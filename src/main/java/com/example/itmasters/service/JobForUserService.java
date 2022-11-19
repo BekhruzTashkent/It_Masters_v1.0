@@ -26,6 +26,8 @@ public class JobForUserService {
         return optionalJobForUser.orElse(null);
     }
 
+
+
     public ApiResponse addJobForUser(JobForUserDTO jobForUserDTO) {
 
         JobForUser jobForUser = new JobForUser();

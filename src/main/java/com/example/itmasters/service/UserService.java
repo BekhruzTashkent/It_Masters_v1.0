@@ -29,6 +29,7 @@ public class UserService {
 
     private final DirectionForUserRepository directionForUserRepository;
 
+    //for getting all fields
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
@@ -45,7 +46,7 @@ public class UserService {
         Optional<Attachment> optionalAttachment = attachmentRepository.findById(userDTO.getAttachment_id());
 
         Optional<RankingForUser> optionalRankingForUser = rankingForUserRepository.findById(userDTO.getRanking_id());
-
+        //all files are required
         User user = new User();
         user.setFirstName(userDTO.getFirstName());
         user.setLastName(userDTO.getLastName());
